@@ -1,0 +1,170 @@
+﻿
+namespace MultimediaAudioProject
+{
+    partial class AddVolumeRatio
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            System.Windows.Forms.Button button2;
+            this.Header = new System.Windows.Forms.Panel();
+            this.Add = new System.Windows.Forms.Button();
+            this.Up = new System.Windows.Forms.RadioButton();
+            this.Down = new System.Windows.Forms.RadioButton();
+            this.trackBar1 = new System.Windows.Forms.TrackBar();
+            this.ratio = new System.Windows.Forms.Label();
+            button2 = new System.Windows.Forms.Button();
+            this.Header.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // button2
+            // 
+            button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(0)))), ((int)(((byte)(57)))));
+            button2.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            button2.FlatAppearance.BorderSize = 0;
+            button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            button2.Font = new System.Drawing.Font("JetBrains Mono", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(195)))), ((int)(((byte)(0)))));
+            button2.Location = new System.Drawing.Point(302, 0);
+            button2.Name = "button2";
+            button2.Size = new System.Drawing.Size(38, 31);
+            button2.TabIndex = 0;
+            button2.Text = "✖";
+            button2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            button2.UseVisualStyleBackColor = false;
+            // 
+            // Header
+            // 
+            this.Header.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(59)))), ((int)(((byte)(82)))));
+            this.Header.Controls.Add(button2);
+            this.Header.Dock = System.Windows.Forms.DockStyle.Top;
+            this.Header.Location = new System.Drawing.Point(0, 0);
+            this.Header.Name = "Header";
+            this.Header.Size = new System.Drawing.Size(340, 25);
+            this.Header.TabIndex = 1;
+            this.Header.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Header_MouseDown);
+            this.Header.MouseHover += new System.EventHandler(this.Header_MouseHover);
+            this.Header.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Header_MouseMove);
+            // 
+            // Add
+            // 
+            this.Add.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(81)))), ((int)(((byte)(105)))));
+            this.Add.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Add.DialogResult = System.Windows.Forms.DialogResult.OK;
+            this.Add.FlatAppearance.BorderSize = 0;
+            this.Add.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Add.Font = new System.Drawing.Font("JetBrains Mono", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Add.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(195)))), ((int)(((byte)(0)))));
+            this.Add.Location = new System.Drawing.Point(105, 171);
+            this.Add.Name = "Add";
+            this.Add.Size = new System.Drawing.Size(134, 55);
+            this.Add.TabIndex = 2;
+            this.Add.Text = "Add";
+            this.Add.UseVisualStyleBackColor = false;
+            this.Add.Click += new System.EventHandler(this.Add_Click);
+            // 
+            // Up
+            // 
+            this.Up.AutoSize = true;
+            this.Up.Font = new System.Drawing.Font("JetBrains Mono", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Up.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(59)))), ((int)(((byte)(82)))));
+            this.Up.Location = new System.Drawing.Point(82, 44);
+            this.Up.Name = "Up";
+            this.Up.Size = new System.Drawing.Size(118, 25);
+            this.Up.TabIndex = 3;
+            this.Up.TabStop = true;
+            this.Up.Text = "Volume Up";
+            this.Up.UseVisualStyleBackColor = true;
+            // 
+            // Down
+            // 
+            this.Down.AutoSize = true;
+            this.Down.Font = new System.Drawing.Font("JetBrains Mono", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Down.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(59)))), ((int)(((byte)(82)))));
+            this.Down.Location = new System.Drawing.Point(82, 75);
+            this.Down.Name = "Down";
+            this.Down.Size = new System.Drawing.Size(138, 25);
+            this.Down.TabIndex = 4;
+            this.Down.TabStop = true;
+            this.Down.Text = "Volume Down";
+            this.Down.UseVisualStyleBackColor = true;
+            // 
+            // trackBar1
+            // 
+            this.trackBar1.Location = new System.Drawing.Point(75, 125);
+            this.trackBar1.Maximum = 20;
+            this.trackBar1.Minimum = 2;
+            this.trackBar1.Name = "trackBar1";
+            this.trackBar1.Size = new System.Drawing.Size(204, 45);
+            this.trackBar1.TabIndex = 5;
+            this.trackBar1.Value = 2;
+            this.trackBar1.Scroll += new System.EventHandler(this.trackBar1_Scroll);
+            // 
+            // ratio
+            // 
+            this.ratio.AutoSize = true;
+            this.ratio.Font = new System.Drawing.Font("JetBrains Mono", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ratio.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(59)))), ((int)(((byte)(82)))));
+            this.ratio.Location = new System.Drawing.Point(285, 125);
+            this.ratio.Name = "ratio";
+            this.ratio.Size = new System.Drawing.Size(18, 19);
+            this.ratio.TabIndex = 21;
+            this.ratio.Text = "1";
+            // 
+            // AddVolumeRatio
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.ClientSize = new System.Drawing.Size(340, 238);
+            this.Controls.Add(this.ratio);
+            this.Controls.Add(this.trackBar1);
+            this.Controls.Add(this.Down);
+            this.Controls.Add(this.Up);
+            this.Controls.Add(this.Add);
+            this.Controls.Add(this.Header);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Name = "AddVolumeRatio";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Form1";
+            this.Header.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
+        }
+
+        #endregion
+
+        private System.Windows.Forms.Panel Header;
+        private System.Windows.Forms.Button Add;
+        private System.Windows.Forms.RadioButton Up;
+        private System.Windows.Forms.RadioButton Down;
+        private System.Windows.Forms.TrackBar trackBar1;
+        private System.Windows.Forms.Label ratio;
+    }
+}

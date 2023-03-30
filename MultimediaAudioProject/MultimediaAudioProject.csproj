@@ -1,0 +1,177 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9E1CBACF-17B0-4B53-A713-001F61D3B700}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>MultimediaAudioProject</RootNamespace>
+    <AssemblyName>MultimediaAudioProject</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="NAudio">
+      <HintPath>..\..\New folder\mm\NAudio.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddSpeed.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddSpeed.Designer.cs">
+      <DependentUpon>AddSpeed.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddTime.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddTime.Designer.cs">
+      <DependentUpon>AddTime.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AudioForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AudioForm.Designer.cs">
+      <DependentUpon>AudioForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddVolumeRatio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddVolumeRatio.Designer.cs">
+      <DependentUpon>AddVolumeRatio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FunctionProvider.cs" />
+    <Compile Include="WaveRenderClasses\AveragePeakProvider.cs" />
+    <Compile Include="WaveRenderClasses\DecibelPeakProvider.cs" />
+    <Compile Include="WaveRenderClasses\IPeakProvider.cs" />
+    <Compile Include="WaveRenderClasses\MaxPeakProvider.cs" />
+    <Compile Include="WaveRenderClasses\PeakInfo.cs" />
+    <Compile Include="WaveRenderClasses\PeakProvider.cs" />
+    <Compile Include="WaveRenderClasses\Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WaveRenderClasses\RmsPeakProvider.cs" />
+    <Compile Include="WaveRenderClasses\SamplingPeakProvider.cs" />
+    <Compile Include="WaveRenderClasses\StandardWaveFormRendererSettings.cs" />
+    <Compile Include="WaveRenderClasses\WaveFormRenderer.cs" />
+    <Compile Include="WaveRenderClasses\WaveFormRendererSettings.cs" />
+    <EmbeddedResource Include="AddSpeed.resx">
+      <DependentUpon>AddSpeed.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddTime.resx">
+      <DependentUpon>AddTime.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddVolumeRatio.resx">
+      <DependentUpon>AddVolumeRatio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AudioForm.resx">
+      <DependentUpon>AudioForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\360_F_229760888_xNSsDETvN5dlWHA2TubbXOuI5nKz6cQu.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\istockphoto-1331291706-612x612.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\modern-simple-overlap-circle-lines-gradient-texture-on-dark-background-with-copy-space-vector.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-play-button-circled-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-play-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-play-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-pause-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-resume-button-32 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-opened-folder-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-save-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-easy-listening-25.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-speaker-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-quick-mode-on-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-query-inner-join-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-voice-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-sound-speaker-32.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
