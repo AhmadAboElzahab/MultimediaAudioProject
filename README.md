@@ -1,6 +1,6 @@
 # Fun : An Audio Software With C# Windows-Forms Using Naudio
 <p align="center">
- <img align="center" src="https://snipboard.io/fUgQZs.jpg">
+ <img  src="https://snipboard.io/fUgQZs.jpg">
 </p>
 
 ## Features
