@@ -12,7 +12,7 @@
 - Render Audio wave
 
 
- 🛠 .net framework 4.8
+ 🛠 .net framework `4.8`
 
 
 
